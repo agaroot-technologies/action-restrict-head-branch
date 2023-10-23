@@ -1,0 +1,16 @@
+{
+  "name": "@agaroot/action-restrict-head-branch",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Restrict branches that can create pull requests",
+  "homepage": "https://github.com/agaroot-technologies/action-restrict-head-branch",
+  "bugs": {
+    "url": "https://github.com/agaroot-technologies/action-restrict-head-branch/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agaroot-technologies/action-restrict-head-branch.git"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@8.9.2"
+}
