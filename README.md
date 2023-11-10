@@ -10,7 +10,7 @@ Restrict pull requests to only be able to be created on specific branches.
 Create a workflow file under ```.github/workflows``` directory.
 
 ```yaml
-name: Restrict base branch
+name: Restrict head branch
 on:
   pull_request_target:
     types: [opened, edited, synchronize]
