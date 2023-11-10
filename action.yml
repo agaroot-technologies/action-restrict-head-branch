@@ -1,0 +1,12 @@
+name: Restrict head branch
+description: Restrict pull requests to only be able to be created on specific branches.
+branding:
+  icon: git-pull-request
+  color: red
+runs:
+  using: node20
+  main: dist/index.js
+inputs:
+  rules:
+    description: A rule set of branch names that allow pull requests to be created.
+    required: true
