@@ -12,7 +12,7 @@ export const main = ({
   head,
   rules,
 }: MainOptions) => {
-  const rule = rules.find(rule => minimatch(head, rule.head));
+  const rule = rules.find((rule) => minimatch(head, rule.head));
   if (!rule) {
     core.setFailed(`The branch name does not follow the rules: ${head}`);
     return;

@@ -14,7 +14,7 @@ export const getPullRequestEvent = (): Exclude<WebhookPayload['pull_request'], u
 export const getHeadBranchName = (): string => {
   const { head = {} } = getPullRequestEvent();
 
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment,@typescript-eslint/no-unsafe-member-access
   const ref = head.ref;
 
   if (typeof ref === 'string') {
